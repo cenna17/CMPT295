@@ -1,3 +1,6 @@
 # Getting to Know Assembly
-_____________________________________________________________________________
-# Include Lectures "Assembly Introduction" & "Assembly: Conditions and Stack"
+
+## An Introduction
+
+See [Assembly Cheat Sheet] (https://ggbaker.ca/295/x86.html) for the types of registers.
+For this course, we will assume that we are working with 64-bit computers and use X86-64 syntax for Assembly code.
