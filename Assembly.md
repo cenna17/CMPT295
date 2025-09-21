@@ -16,12 +16,10 @@ For this course, we will assume that we are working with 64-bit computers and us
 `-c` - flag to tell the compiler to COMPILE ONLY INTO `.o` from the `.c` files that follow.
 All files need to be turned into `.o` object files (machine code of 0s and 1s) before it can run.
 
-        C/C++ -----> Assembly --> machine code (.o)
-
-Jave/C#/Python ----> Bytecode --> interpreter -> machine code
+       ![see diagram](https://ggbaker.ca/295/media/running-code.svg)
 
 We can turn codes written in other languages into machine code (.o) -> link them -> run them as part of a bigger program
-We can expect Assembly to be slightly faster than C b/c its 'one step closer' to machine code than C ![see diagram](https://ggbaker.ca/295/media/running-code.svg)
+We can expect Assembly to be slightly faster than C b/c its 'one step closer' to machine code than C 
 
 `gcc -c` compiles C code to object code
 
