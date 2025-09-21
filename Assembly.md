@@ -59,13 +59,12 @@ We can expect Assembly to be slightly faster than C b/c its 'one step closer' to
 * Registers are used to store data and may be split into multiple categories.
 * `Preserved Registers` may be used to store values that we want to preserve for later use.
 
-%r12    %rbx <---  
-                    The second column here are
+```
+%r12    %rbx <---   The second column here are
 %r13    %rbp <---   also preserved registers
-                    but they are special.
-%r14    %rsp <---
+%r14    %rsp <---   but they are special.
 %r15
-
+```
 are preserved registers. 
 
 * There are only so many registers !
