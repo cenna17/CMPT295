@@ -1,5 +1,15 @@
 # Getting to Know Assembly
 
+References: 
+
+[Course Introduction](https://ggbaker.ca/295/content/intro.html)
+
+[Revisiting C](https://ggbaker.ca/295/content/c.html)
+
+[Assembly Introduction](https://ggbaker.ca/295/content/assembly.html)
+
+[Assembly Conditions and the Stack](https://ggbaker.ca/295/content/assembly2.html)
+
 ## [An Introduction](https://ggbaker.ca/295/content/assembly.html)
 
 * See [Assembly Cheat Sheet](https://ggbaker.ca/295/x86.html) for the types of registers.
@@ -10,11 +20,16 @@ For this course, we will assume that we are working with 64-bit computers and us
 `gcc -Wall -Wpedantic -std=c17 -march=haswell hello.c -o hello`
 
 `gcc` - the compiler we use
+
 `gcc { stuff } hello.c` -   those 'stuff' are flags; specific things we want the compiler should look out 
                             for when we compile
+
 `-g` - flag to turn on debugger
+
 `-c` - flag to tell the compiler to COMPILE ONLY INTO `.o` from the `.c` files that follow.
+
 All files need to be turned into `.o` object files (machine code of 0s and 1s) before it can run.
+
 ![see diagram](https://ggbaker.ca/295/media/running-code.svg)
 
 We can turn codes written in other languages into machine code (.o) -> link them -> run them as part of a bigger program
@@ -44,9 +59,11 @@ We can expect Assembly to be slightly faster than C b/c its 'one step closer' to
 * Registers are used to store data and may be split into multiple categories.
 * `Preserved Registers` may be used to store values that we want to preserve for later use.
 
-%r12    %rbx <---> The second column here
-%r13    %rbp <---> are also preserved registers
-%r14    %rsp <---> but they are special.
+%r12    %rbx <---  
+                    The second column here are
+%r13    %rbp <---   also preserved registers
+                    but they are special.
+%r14    %rsp <---
 %r15
 
 are preserved registers. 
@@ -141,4 +158,10 @@ return X <- return 3
 `rbx` - 
 
 IDK whats so special about these two...
+
+_______________________________________
+Questions for Prof: 
+What's so special about rbp and rbx
+How do we manipulate the ptr of the stack?
+________________________________________
 
