@@ -6,4 +6,12 @@
 For this course, we will assume that we are working with 64-bit computers and use X86-64 syntax for Assembly code.
 
 ##### Assembly Template
- `
+ ```bash
+    .section .note.GNU-stack, ""
+        .global add10
+        .text
+
+    {code body}
+
+    ret
+```s
