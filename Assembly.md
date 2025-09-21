@@ -5,7 +5,7 @@
 * See [Assembly Cheat Sheet](https://ggbaker.ca/295/x86.html) for the types of registers.
 For this course, we will assume that we are working with 64-bit computers and use X86-64 syntax for Assembly code.
 
-##### Compiler Stuff
+##### Commands && Compiler Stuff
 
 `gcc -Wall -Wpedantic -std=c17 -march=haswell hello.c -o hello`
 
@@ -22,6 +22,14 @@ Jave/C#/Python ----> Bytecode --> interpreter -> machine code
 
 We can turn codes written in other languages into machine code (.o) -> link them -> run them as part of a bigger program
 We can expect Assembly to be slightly faster than C b/c its 'one step closer' to machine code than C ![see diagram](https://ggbaker.ca/295/media/running-code.svg)
+
+`gcc -c` compiles C code to object code
+
+`as` assembles Assembly code to object code
+
+`ld` links object code to create an executable
+
+`executable` as the name suggests, this is the file we run when we want to run a program
 
 ##### Assembly Template
  ```bash
