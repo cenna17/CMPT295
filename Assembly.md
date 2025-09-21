@@ -15,8 +15,7 @@ For this course, we will assume that we are working with 64-bit computers and us
 `-g` - flag to turn on debugger
 `-c` - flag to tell the compiler to COMPILE ONLY INTO `.o` from the `.c` files that follow.
 All files need to be turned into `.o` object files (machine code of 0s and 1s) before it can run.
-
-       ![see diagram](https://ggbaker.ca/295/media/running-code.svg)
+![see diagram](https://ggbaker.ca/295/media/running-code.svg)
 
 We can turn codes written in other languages into machine code (.o) -> link them -> run them as part of a bigger program
 We can expect Assembly to be slightly faster than C b/c its 'one step closer' to machine code than C 
@@ -123,8 +122,8 @@ should not as this destroys the philosophy of the stack data structure.
 |     |             |     |
 
 |     |             |     | <- %rsp after subtracting we move 'down' the stack
-
-|_____|             |_____|         and get the data at this location.
+                                 and get the data at this location.
+|_____|             |_____|        
 ```
 We can also `push` a value into the stack -> change it -> and `pop` the stack 
 when we want the original value back.
