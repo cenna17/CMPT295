@@ -117,7 +117,7 @@ to the top of the stack by the nature of the STACK LIFO (last in - first out) st
 
 In theory, we can move this pointer by ADDING/SUBTRACTING from the register but we 
 should not as this destroys the philosophy of the stack data structure.
-
+```
 |     | <- %rsp     |     |
 
 |     |             |     |
@@ -125,7 +125,7 @@ should not as this destroys the philosophy of the stack data structure.
 |     |             |     | <- %rsp after subtracting we move 'down' the stack
 
 |_____|             |_____|         and get the data at this location.
-
+```
 We can also `push` a value into the stack -> change it -> and `pop` the stack 
 when we want the original value back.
 
